@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+    <head>
+        <!-- browser settings -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name='apple-mobile-web-app-capable' content='yes'>
+        <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+        <meta name="google-site-verification" content="y2dJR68UhcK0dkaowa2y-wkETazYdw2FvZt4CsKnWio" /> <!-- google search console -->
+        <!-- SEO -->
+        <title>High Horse - London Digital Agency. Your Idea To Market</title>
+        <meta name="description" content="High Horse is a digital agency that brings ideas to market. We take equal parts design and technology to create effective apps and websites. Our London hq will take your big ideas and work with you to deliver investment or market success. ">
+        <meta name="author" content="jpmerritt">
+        <meta canonical="">
+        <link rel="icon" type="image/png" href="/assets/images/.png" />
+        <link rel="shortcut icon" type="image/png" href="/assets/images/.png" />
+        <link rel="apple-touch-icon" type="image/png" href="/assets/images/.png" />
+        <% if ( environment === "production" ) { %>
+            <!-- compiled css for proudction, dev uses inline for hot reloading -->
+            <link rel="stylesheet" href="/build/style.css">
+        <% } %>
+    </head>
+    <body>
+      <div class="reactApp"></div>
+
+
+      <!-- Google Analytics -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga( 'create', 'UA-75178759-1', "highhorse.agency" );
+        ga( 'send', 'pageview', "/" );
+      </script>
+      <!-- End Google Analytics -->
+
+      <!-- js -->
+      <% if ( environment === "production" ) { %>
+          <!-- app bundle served in production -->
+          <script src="/build/vendors.js"></script>
+          <script src="/build/bundle.js"></script>
+      <% } %>
+      <% if ( environment === "development" ) { %>
+          <!-- webpack hot-reloading for dev only -->
+          <script src="http://localhost:3000/webpack-dev-server.js"></script>
+          <script src="http://localhost:3000/build/bundle.js"></script>
+      <% } %>
+
+    </body>
+</html>
