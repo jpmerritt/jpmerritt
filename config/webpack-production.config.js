@@ -22,7 +22,7 @@ module.exports = {
 			"redux",
 			"react-redux",
 			"redux-promise",
-			"redux-simple-router",
+			"react-router-redux",
 			"history",
 			"lodash",
 			"classnames",

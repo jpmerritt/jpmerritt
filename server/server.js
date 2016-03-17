@@ -53,7 +53,7 @@ app.use( router.middleware() );
 /**
  * start app
 */
-let port = NODE_ENV === "production" ? 8102 : 8202;
+let port = NODE_ENV === "production" ? 8101 : 8201;
 app.listen( port );
 console.info( `High Horse Browser is running on port: ${port}` );
 
