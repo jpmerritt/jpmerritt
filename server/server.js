@@ -55,7 +55,7 @@ app.use( router.middleware() );
 */
 let port = NODE_ENV === "production" ? 8101 : 8201;
 app.listen( port );
-console.info( `High Horse Browser is running on port: ${port}` );
+console.info( `jpmerritt is running on port: ${port}` );
 
 
 
